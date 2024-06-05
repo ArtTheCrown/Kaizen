@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kaizen"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        WindowStyle="None"
+        Title="Kaisen" Height="700" Width="350" Background="{x:Null}" AllowsTransparency="True" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
+        <Border Panel.ZIndex="0">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF585858"/>
+                    <GradientStop Color="#FFB9B9B9" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
 
+        <Border x:Name="mainContainer" BorderBrush="#FF676767" BorderThickness="1,1,1,1">
+
+
+        </Border>
     </Grid>
 </Window>
