@@ -45,5 +45,68 @@ namespace Kaizen
         {
             WindowState = WindowState.Minimized;
         }
+
+        //===============================================================================================================
+        // _   _ _____    ___        _                 _   _               _____           _   _             
+        //| | | |_   _|  / _ \      (_)               | | (_)             /  ___|         | | (_)            
+        //| | | | | |   / /_\ \_ __  _ _ __ ___   __ _| |_ _  ___  _ __   \ `--.  ___  ___| |_ _  ___  _ __  
+        //| | | | | |   |  _  | '_ \| | '_ ` _ \ / _` | __| |/ _ \| '_ \   `--. \/ _ \/ __| __| |/ _ \| '_ \ 
+        //| |_| |_| |_  | | | | | | | | | | | | | (_| | |_| | (_) | | | | /\__/ /  __/ (__| |_| | (_) | | | |
+        // \___/ \___/  \_| |_/_| |_|_|_| |_| |_|\__,_|\__|_|\___/|_| |_| \____/ \___|\___|\__|_|\___/|_| |_|
+        //                                                                                                   
+        //
+        //===============================================================================================================
+
+        private void Minimize_Button_MouseEnter(object sender, MouseEventArgs e)
+        {
+            string hexColor = "#FF50D2FF";
+
+
+            Color newColor = (Color)ColorConverter.ConvertFromString(hexColor);
+
+
+            SolidColorBrush brush = new SolidColorBrush(newColor);
+
+            Minimize_Border.Background = brush;
+        }
+
+        private void Minimize_Button_MouseLeave(object sender, MouseEventArgs e)
+        {
+            string hexColor = "#FF003446";
+
+
+            Color newColor = (Color)ColorConverter.ConvertFromString(hexColor);
+
+
+            SolidColorBrush brush = new SolidColorBrush(newColor);
+
+            Minimize_Border.Background = brush;
+        }
+
+        private void Close_Button_MouseEnter(object sender, MouseEventArgs e)
+        {
+            string hexColor = "#FFFF5555";
+
+
+            Color newColor = (Color)ColorConverter.ConvertFromString(hexColor);
+
+
+            SolidColorBrush brush = new SolidColorBrush(newColor);
+
+            Close_Border.Background = brush;
+        }
+
+        private void Close_Button_MouseLeave(object sender, MouseEventArgs e)
+        {
+            string hexColor = "#FF460000";
+
+
+            Color newColor = (Color)ColorConverter.ConvertFromString(hexColor);
+
+
+            SolidColorBrush brush = new SolidColorBrush(newColor);
+
+            Close_Border.Background = brush;
+        }
     }
 }
