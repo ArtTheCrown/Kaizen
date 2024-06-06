@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Kaizen"
         mc:Ignorable="d"
         WindowStyle="None"
-        Title="Kaisen" Height="700" Width="350" Background="{x:Null}" AllowsTransparency="True" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="Kaizen" Height="700" Width="350" Background="{x:Null}" AllowsTransparency="True" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
         <Border Panel.ZIndex="0">
             <Border.Background>
@@ -18,7 +18,14 @@
         </Border>
 
         <Border x:Name="mainContainer" BorderBrush="#FF676767" BorderThickness="1,1,1,1">
-
+            <StackPanel>
+                <Border Height="22" Background="Black" BorderBrush="#FF2F2F2F" BorderThickness="0.5,0.5,0.5,0.5">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Kaisen" Foreground="White" FontSize="16" Padding="5,0,0,0" ScrollViewer.CanContentScroll="True" FontFamily="Segoe UI Black" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,-1,0,0"/>
+                    </StackPanel>
+                </Border>
+                
+            </StackPanel>
 
         </Border>
     </Grid>
