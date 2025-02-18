@@ -12,6 +12,23 @@ namespace Kaizen.Models
         public String Completed { get; set; }
         public DateTime DeadLine { get; set; }
         public List<DateTime> TimeStamps { get; set; }
-        public Configurations Configuration { get; set; }
+
+        // Foreign key for User
+        public int UserId { get; set; }
+        public User User { get; set; }
+    }
+
+
+    public class TaskTimeStamp
+    {
+        public int Id { get; set; }
+        public DateTime TimeStamp { get; set; }
+        public int TaskId { get; set; }
+        public Tasks Task { get; set; }
+    }
+
+    public class Configurations
+    {
+        // Define configuration properties here
     }
 }
